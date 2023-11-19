@@ -29,7 +29,7 @@ class Breaker(torch.nn.Module):
         self.alpha = alpha
         self.user_embed = UserRepresentation(n_feat, n_field, embed_size=embed_size)
         self.user_embed.load_state_dict(init_user_embed.state_dict())
-        self.item_embed = torch.nn.Embedding(36, embed_size)
+        self.item_embed = torch.nn.Embedding(10, embed_size)
         self.tower_ls = torch.nn.ModuleList([
             torch.nn.Sequential(
                 torch.nn.Linear(64 + embed_size, 32),
