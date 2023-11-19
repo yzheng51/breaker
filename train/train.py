@@ -127,16 +127,6 @@ del to_valid, tmp
 print(f"aer_valid.shape={aer_valid.shape}")
 
 # =========================================================================================
-# Negative sampling
-# =========================================================================================
-pos = train.loc[train[label_col] == 1]
-neg = train.loc[train[label_col] == 0].sample(frac=0.2)
-train = pd.concat([pos, neg]).sample(frac=1).reset_index(drop=True)
-
-print("After negative sampling")
-print(train.info())
-
-# =========================================================================================
 # Prepare for NN
 # =========================================================================================
 feat_info = pd.read_parquet(feat_info_file_path)
@@ -343,7 +333,7 @@ for e in range(max_epochs):
 # =========================================================================================
 # Visualization
 # =========================================================================================
-model_path = "../models/breaker/10.pth"
+model_path = "../models/breaker/0.pth"
 net = Breaker(
     n_feat=counter,
     n_field=len(feats),
