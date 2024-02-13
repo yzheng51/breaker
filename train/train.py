@@ -17,6 +17,7 @@ from src.loss import kl_divergence_loss
 from src.dataset import MyDataset
 from src.model import UserRepresentation, Breaker
 
+
 # =========================================================================================
 # Seed everything for deterministic results
 # =========================================================================================
