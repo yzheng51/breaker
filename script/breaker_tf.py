@@ -522,7 +522,7 @@ if __name__ == "__main__":
               "learning_rate": 1e-3,
               "cluster_alpha": 0.1,
               "encode_dims": [256, 64],
-              "epochs": 8,
+              "epochs": 10,
               "batch_size": 128,
               "alpha": 1,
               "earlystop_patience": 1}
