@@ -25,6 +25,7 @@ This repo contains the implementation of Breaker in Tensorflow and PyTorch.
 ### 1 Prepare the Environment
 
 ```python
+# Requires Python 3.6.15
 pip install -r requirements.txt
 ```
 
