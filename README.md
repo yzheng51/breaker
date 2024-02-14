@@ -31,25 +31,25 @@ pip install -r requirements.txt
 
 ### 2 Data Preprocessing
 
-You will need to prepare a configuration file for data preprocessing as shown in feat_info.json, which includes three fields:
+You will need to prepare a configuration file for data preprocessing, as detailed in `feat_info.json`. This configuration file should include three fields:
 
-- colType: Specifies whether a feature is categorical (denoted by 'E') or continuous (denoted by 'M').
-- encode: For categorical features, specify the encoding method for embedding purposes.
-- manualBox: For continuous features, specify the feature value split points to convert them into discrete features.
+- `colType`: Specifies the type of each feature, with 'E' indicating a categorical feature and 'M' indicating a continuous feature.
+- `encode`: For categorical features ('E'), provides a dictionary that maps original feature values to their encoded values, which will be used for embedding purposes. Ensure each categorical feature has its corresponding encoding dictionary.
+- `manualBox`: For continuous features ('M'), this indicates the split points for converting the feature values into discrete intervals. Split points should be specified as a list of values.
 
-An example dataset, demo_data.csv, is stored in the data folder. Run the script/data_preprocessing.ipynb to process the data and split the dataset. The preprocessed data will be stored in the data/ directory.
+An example dataset, `demo_data.csv`, is available in the `data/` folder. To process the data and split the dataset, open and run the Jupyter notebook located at `script/data_preprocessing.ipynb`. The preprocessed data will be saved in the `data/` directory with a specified file name and format, as described in the notebook.
 
 ### 3 Run the Model
 
-Use the command:
+Run the command:
 
 ```
 python3 script/breaker_tf.py --suffix demo --file script/breaker_tf.py --gpu-index 0
 ```
 
-Clear explanations for the command can be found within the code (see the parse_args function). You can define the model structure through the 'params' in the breaker_tf.py script.
+Clear explanations for the command-line arguments are provided within the `parse_args` function in the script file. Please refer to this function for detailed descriptions of each argument. You can define the model structure by setting the appropriate parameters within the 'params' dictionary in the `breaker_tf.py` script.
 
 ### 4 Model Logging
 
-The logs from the model run, parameter configurations, and checkpoint files are saved in the 'log' directory.
+All logs, including training progress, and relevant model run information, along with the parameter configurations set for the run, and the model's checkpoint files, are saved in the `log` directory.
 
