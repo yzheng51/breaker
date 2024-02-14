@@ -44,7 +44,7 @@ An example dataset, demo_data.csv, is stored in the data folder. Run the script/
 Use the command:
 
 ```
-python3 script/breaker_tf.py --suffix demo --file breaker_tf.py --gpu-index 0
+python3 script/breaker_tf.py --suffix demo --file script/breaker_tf.py --gpu-index 0
 ```
 
 Clear explanations for the command can be found within the code (see the parse_args function). You can define the model structure through the 'params' in the breaker_tf.py script.
