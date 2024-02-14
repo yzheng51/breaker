@@ -6,18 +6,18 @@ This repo contains the implementation of Breaker in Tensorflow and PyTorch.
 
 ```shell
 ├── README.md
-├── config # configuration file for data preprocessing
+├── config # directory for configuration files related to data preprocessing
 │   └── feat_info.json
-├── data # data file
+├── data # directory for data files
 │   ├── demo_data.csv
 │   ├── test_data_fornn.csv
 │   └── train_data_fornn.csv
-├── log # run log
-├── requirements.txt # environment
+├── log # directory for run logs
+├── requirements.txt # list of dependencies for the project environment
 └── script
-    ├── breaker_tf.py  # implemented with tensorflow
-    ├── breaker_torch # implemented with Torch
-    └── data_preprocessing.ipynb # data preprocessing
+    ├── breaker_tf.py  # script implemented with TensorFlow
+    ├── breaker_torch # directory with Torch implementation scripts
+    └── data_preprocessing.ipynb # Jupyter notebook for data preprocessing
 ```
 
 ## How to run? 
