@@ -470,9 +470,9 @@ if __name__ == "__main__":
     parser.add('--file', dest="file", type=str, default='default')
 
 
-    root_dir = '../'
+    root_dir = '' #TODO: replace your absolute path
     train_path = os.path.join(root_dir, 'data',
-                              'train_data_fronn.csv')
+                              'train_data_fornn.csv')
     valid_path = os.path.join(root_dir, 'data',
                               'test_data_fornn.csv')
 
