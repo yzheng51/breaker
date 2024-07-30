@@ -1,2 +1,2 @@
-model_checkpoint_path: "/Users/wangchao/Documents/CIKM2023/WWW/github/breaker_main/breaker/log/02141843_demo/model_file/dec_ckpt_epoch_0/model.ckpt"
-all_model_checkpoint_paths: "/Users/wangchao/Documents/CIKM2023/WWW/github/breaker_main/breaker/log/02141843_demo/model_file/dec_ckpt_epoch_0/model.ckpt"
+model_checkpoint_path: "./log/02141843_demo/model_file/dec_ckpt_epoch_0/model.ckpt"
+all_model_checkpoint_paths: "./log/02141843_demo/model_file/dec_ckpt_epoch_0/model.ckpt"
